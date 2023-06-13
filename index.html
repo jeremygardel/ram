@@ -6,6 +6,9 @@
   <link rel="stylesheet" href="css/style.css"/>
 
   <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="CSS/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
   <title>Document</title>
 </head>
 
@@ -47,8 +50,8 @@
         </form>
         
         <div class="buttons-nav">
-          <button type="button" class="btn btn-primary me-2 btn-nav login-btn">Login</button>
-          <button type="button" class="btn btn-warning btn-nav">Register</button>
+          <button type="button" class="login-btn ram-btn">Login</button>
+          <button type="button" class="btn-nav ram-btn">Register</button>
         </div>
 
       </div>
@@ -60,21 +63,24 @@
         <div class="login-page">
             <form>
               <i class="fa-regular fa-circle-xmark close-login"></i>
+              <div class="login-logo">
+                <a href=""><img src="images/logo.jpg" alt="logo" style="max-width:200px" title="Home Page"/></a>
+                <h4>LOGIN</h4> 
+                <p><i class="fa fa-android w3-large"></i><i class="fa fa-apple w3-large"></i><i class="fa fa-windows w3-large"></i></p>
+              </div>
               <div class="mb-3 login ">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                <input type="email" placeholder="Email Addreas" class="pt-3 form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text"><span style="color:red; margin-left: 10px;">Note: </span>We'll never share your email with anyone else.</div>
               </div> 
               <!-- Hi russ -->
               <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+                <input type="password" placeholder="Password" class="form-control pt-3" id="exampleInputPassword1">
               </div>
               <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                <input type="checkbox" class="form-check-input " id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Remember me</label>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="ram-btn login-href">Login</button>
             </form>
         </div>
       </div>

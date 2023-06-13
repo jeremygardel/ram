@@ -5,8 +5,6 @@ $( document ).ready(function() {
     $('.login-page').hide();
     $('.form-nav').animate({
         'top': '0'
-
-
     },2000)
     $('.login-btn').click(function(){
         $('.overlay').fadeIn(2000);
