@@ -1,0 +1,40 @@
+/* بسم الله الرحمن الرحيم */
+/*              Common               */
+
+.overlay {
+    background-color: rgb(0,0,0,0.4);
+    width: 100%;
+    position: fixed;
+    z-index:3;
+    top:0;
+    left: 0;
+    height: 100%;
+}
+
+/*              Navbar                   */
+
+.form-nav {
+    position: fixed;
+    top: -400px;
+    right: 300px;
+    width: 50%;
+}
+.buttons-nav button {
+    transition-duration: 0.75s;
+
+}
+.buttons-nav button:hover {
+    background-color: aqua;
+    border: none;
+    outline: none;
+}
+.login-page {
+    width: 50%;
+    background-color: lightgray;
+    padding: 30px;
+    margin: auto;
+    border-radius: 20px 0 20px 0;
+    position: relative;
+    
+
+}
