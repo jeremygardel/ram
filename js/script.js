@@ -4,7 +4,7 @@ $( document ).ready(function() {
     $('.overlay').hide();
     $('.login-page').hide();
     $('.form-nav').animate({
-        'top': '9px'
+        'top': '0'
 
 
     },2000)
@@ -13,4 +13,7 @@ $( document ).ready(function() {
         $('.login-page').fadeIn(2000);
     })
 
+    $('.close-login').click(function(){
+        $('.overlay').fadeOut(500);
+    })
 });
