@@ -46,9 +46,9 @@ body{
     text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
     transition-duration: 0.75s;
 }
-.ram-btn:hover {
+/* .ram-btn:hover {
     background-color: blue;
-} 
+}  */
 
 
 /*   >>>>>>>>>>>>>>>>>>>>               .Main Work             <<<<<<<<<<<<<<<<<<<<<<<<< */
@@ -63,6 +63,7 @@ body{
 }
 .buttons-nav button {   transition-duration: 0.75s; }
 .buttons-nav button:hover {
+    transform: translate(0%,-13%);
     background-color: blue;
     border: none;
     outline: none;
@@ -70,6 +71,11 @@ body{
 .search-btn {
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 6px 10px 6px 10px; 
+}
+.search-btn:hover {
+    transform: translate(0%,-15%);
+    background-color: blue;
+
 }
 .login-page {
     width: 50%;
