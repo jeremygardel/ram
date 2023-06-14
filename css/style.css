@@ -108,6 +108,7 @@ body{
     color: black;
     margin-left: 75px;
     color: yellowgreen;
+    transition: 0.37s;
 }
 .navbar-ul a li::after{
     content: "";
@@ -117,6 +118,9 @@ body{
     background-color: cyan;
     transition: width 0.45s;
 }
+.navbar-ul a li:hover {
+    color:White;
+}
 .navbar-ul a li:hover::after {
     width: 100%;
 }
@@ -125,5 +129,5 @@ body{
 
 .slidebar {
     width: 60%;
-    margin: 5% auto;
+    margin: 3% auto;
 }
