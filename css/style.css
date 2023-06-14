@@ -4,7 +4,7 @@ body{
     height: 3000px;
 }
 .overlay {
-    background-color: rgb(0,0,0,0.4);
+    background-color: rgb(0,0,0,0.5);
     width: 100%;
     position: fixed;
     z-index:3;
@@ -14,8 +14,9 @@ body{
 }
 
 /*          Stock Button         */
+
 .ram-btn {
-    display: inline-block;
+    /* display: inline-block;
     height: 50px;
     line-height: 50px;
     background-color: #ee626b;
@@ -25,11 +26,29 @@ body{
     padding: 0px 26px;
     border: none;
     border-radius: 23px;
-    transition-duration: 0.39s;
+    transition-duration: 0.39s; */
+
+
+    backface-visibility: hidden;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    white-space: nowrap;
+    background: #333b32;
+    border-radius: 5px;
+    border-width: 0px 0px 0px 0px;
+    padding: 9px 12px 9px 12px;
+    color: #fff;
+    font-size: 17px;
+    font-family: century gothic;
+    font-weight: 500;
+    font-style: normal;
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+    transition-duration: 0.75s;
 }
 .ram-btn:hover {
-    background-color: #0d6efd;
-}
+    background-color: blue;
+} 
 
 
 /*   >>>>>>>>>>>>>>>>>>>>               .Main Work             <<<<<<<<<<<<<<<<<<<<<<<<< */
@@ -42,14 +61,15 @@ body{
     right:15%;
     width: 50%;
 }
-.buttons-nav button {
-    transition-duration: 0.75s;
-
-}
+.buttons-nav button {   transition-duration: 0.75s; }
 .buttons-nav button:hover {
-    background-color: aqua;
+    background-color: blue;
     border: none;
     outline: none;
+}
+.search-btn {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 6px 10px 6px 10px; 
 }
 .login-page {
     width: 50%;
@@ -63,18 +83,16 @@ body{
     margin: auto;
     text-align: center;
 }
-.login-input {
-    padding: 40px 40px;
-}
+.login-input {  padding: 40px 40px; }
+
 .login-href {
     text-align: center;
     margin:auto;
 }
-.close-login{
+.close-login {
     position: absolute;
     top: 15px;
     right: 20px; 
-    /* color: black; */
     cursor: pointer;
     font-size: 1.5rem;
     font-size: 20px;
@@ -82,6 +100,17 @@ body{
 .close-login:hover {
     transform: scale(1.14);
 }
+.login-btn {    margin-right: 7px; }
+
+.login-btn > i {
+    font-size: 2em;
+    border-radius: 0px;
+    border: 0px solid transparent;
+    border-width: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 10px;
+    position: static;
+}
+
 
 /*              Second Navbar            */
 .second-navbar {
@@ -90,19 +119,16 @@ body{
     color: yellowgreen;
     padding: 2px 0;
 }
-.navbar-ul, .second-navbar p {
-    margin-top: 7px;
-}
-.second-navbar p {
-    margin-left: 18px;
-}
+.navbar-ul, .second-navbar p {  margin-top: 7px; }
+
+.second-navbar p {  margin-left: 18px }
+
 .navbar-ul {
     display: flex;
     color: yellowgreen;
 }
-.navbar-ul a {
-    text-decoration: none;
-}
+.navbar-ul a {  text-decoration: none;  }
+
 .navbar-ul a li {
     list-style: none;
     color: black;
@@ -127,7 +153,62 @@ body{
 
 /*              Slide  -   Bar */
 
-.slidebar {
+ .slidebar {
     width: 60%;
-    margin: 3% auto;
+    margin: 2% auto;
 }
+
+
+/* <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<!-- sample html for this button-->
+<div class="button">
+  SIGNUP
+  <div></div>
+  <i class="fa fa-shopping-cart"></i>'
+</div>
+<!-- stylesheet for this button -->
+<style type="text/css">
+  .button {
+    backface-visibility: hidden;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  white-space: nowrap;
+  background: #34332f;
+  border-radius: 2px;
+  border: 0px solid #444;
+  border-width: 0px 0px 0px 0px;
+  padding: 10px 49px 10px 15px;
+    color: #fff;
+  font-size: 16px;
+  font-family: Helvetica Neue;
+  font-weight: 900;
+  font-style: normal
+  }
+  .button > div {
+    color: #999;
+  font-size: 10px;
+  font-family: Helvetica Neue;
+  font-weight: initial;
+  font-style: normal;
+  text-align: center;
+  margin: 0px 0px 0px 0px
+  }
+  .button > i {
+    font-size: 1em;
+  background: #616161;
+  border-radius: 0px;
+  border: 0px solid transparent;
+  border-width: 0px 0px 0px 0px;
+  padding: 14px 8px 14px 8px;
+  margin: 0px 0px 0px 0px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: 38px
+  }
+  .button > .ld {
+    font-size: initial
+  }
+</style> */
