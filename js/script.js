@@ -9,9 +9,12 @@ $( document ).ready(function() {
     $('.login-btn').click(function(){
         $('.overlay').fadeIn(2000);
         $('.login-page').fadeIn(2000);
-    })
-
-    $('.close-login').click(function(){
-        $('.overlay').fadeOut(500);
-    })
+    });
 });
+
+let closeLoginbtn = document.getElementById("close-loginbtn");
+let overlay = document.getElementById("overlay");
+
+function closeLogin () {
+    overlay.style.display = "none";
+}
