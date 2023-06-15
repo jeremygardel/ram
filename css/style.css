@@ -54,7 +54,9 @@ body{
 /*   >>>>>>>>>>>>>>>>>>>>               .Main Work             <<<<<<<<<<<<<<<<<<<<<<<<< */
 
 /*              Navbar                   */
-
+.navbar{
+    z-index: 1001;
+}
 .form-nav {
     position: relative;
     top: -400px;
@@ -124,6 +126,9 @@ body{
     background-color: black;
     color: yellowgreen;
     padding: 2px 0;
+    position: sticky;
+    top: -1px;
+    z-index: 1000;
 }
 .navbar-ul, .second-navbar p {  margin-top: 7px; }
 
