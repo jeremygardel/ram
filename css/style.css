@@ -1,5 +1,11 @@
 /* بسم الله الرحمن الرحيم */
+
+
+
+/*      HTML COLOR CODE > www.htmlcolorcodes.com */
 /*              Common               */
+
+
 body{
     height: 3000px;
 }
@@ -167,7 +173,7 @@ body{
 
 .navbar-ul {
     display: flex;
-    color: yellowgreen;
+    color: #C6A934;
 }
 .navbar-ul a {  text-decoration: none;  }
 
@@ -175,7 +181,7 @@ body{
     list-style: none;
     color: black;
     margin-left: 75px;
-    color: yellowgreen;
+    color:#C6A934;
     transition: 0.37s;
 }
 .navbar-ul a li::after{
@@ -202,19 +208,35 @@ body{
     width: 60%;
     margin: 2% auto;
 }
+.cateorgy {
+    margin-bottom: 20px;
+}
+
 .slidebar-left a {
     text-decoration: none;
     color: black;
-    transition-duration: 0.3s;
+    transition-duration: 0.34s;
+    width: 100%;
+}
+.slidebar-left a::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 1px;
+    background-color: black;
+    transition: width 0.45s;
 }
 .slidebar-left a:hover {
-    text-decoration: underline;
+    color:#BFBFBF;
+}
+.slidebar-left a:hover::after {
+    width: 70%;
 }
 .slidebar-left {
     margin-left: 11px;
     margin-top: 10px;
 }
-.slidebar-left p {
+.slidebar-title {
     text-decoration: underline;
 }
 .cateorgy, .customer-review,.brands {
